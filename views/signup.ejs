@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <a style="color: wheat;" href="/"><< Home</a>
+    <div class="box">
+      <form action="/adduser" method="post">
+        <div class="firstname" >
+          First Name : <br>
+          <input type="text" name="firstname">
+        </div>
+        <div class="lastname">
+          Last Name : <br>
+          <input type="text" name="lastname">
+        </div>
+        <div class="email">
+          Email : <br>
+          <input type="text" name="email">
+        </div>
+        <div class="username">
+          username : <br>
+          <input type="text" name="username">
+        </div>
+        <div class="password">
+          password : <br>
+          <input type="password" name="password">
+        </div>
+        <div class="button">
+          <button type="submit">Sign Up</button>
+          <a style="padding: 5px 10px;color: wheat;" href="/login"> login? </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+<style>
+  body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(22, 22, 58);
+  }
+  .box{
+    background-color: blueviolet;
+    padding: 2rem;
+  }
+  .box form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+  }
+  .button button{
+    padding: 5px 15px;
+  }
+</style>
+</html>
